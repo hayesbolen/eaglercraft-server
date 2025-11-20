@@ -1,0 +1,17 @@
+{
+  "name": "Eaglercraft Codespace",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [6699],
+  "postCreateCommand": "chmod +x ./run.sh || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  },
+  "shutdownAction": "stopCompose"
+}
